@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Define Clash Display font with different font weights */
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash-display/ClashDisplayMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash-display/ClashDisplayBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash-display/ClashDisplaySemibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash-display/ClashDisplayLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash-display/ClashDisplayExtralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash-display/ClashDisplayRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Define Gilroy font with different font weights */
+
+/* Gilroy - Regular */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/gilroy/Gilroy-Regular.ttf') format('opentype');
+    font-weight: 400;
+    /* Regular */
+    font-style: normal;
+}
+
+/* Gilroy - Medium */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/gilroy/Gilroy-Medium.ttf') format('opentype');
+    font-weight: 500;
+    /* Medium */
+    font-style: normal;
+}
+
+/* Gilroy - SemiBold */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/gilroy/Gilroy-SemiBold.ttf') format('opentype');
+    font-weight: 600;
+    /* SemiBold */
+    font-style: normal;
+}
+
+/* Gilroy - Bold */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/gilroy/Gilroy-Bold.ttf') format('opentype');
+    font-weight: 700;
+    /* Bold */
+    font-style: normal;
+}
+
+
+/* work page */
+@import "swiper/css";
+@import "swiper/css/navigation";
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-150%); 
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
 }
