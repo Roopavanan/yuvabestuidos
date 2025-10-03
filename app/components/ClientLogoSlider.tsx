@@ -10,7 +10,7 @@ const ClientLogoSlider = () => {
     { src: "/client/matrimandir.svg", alt: "Client 1" },
     { src: "/client/maatram.svg", alt: "Client 2" },
     { src: "/client/ageshift.svg", alt: "Client 3" },
-    { src: "/client/solitude-fram.svg", alt: "Client 4" },
+    { src: "/client/solitude-farm.svg", alt: "Client 4" },
     { src: "/client/tvam.svg", alt: "Client 5" },
     { src: "/client/bevolve.svg", alt: "Client 6" },
     { src: "/client/av-marathon.svg", alt: "Client 7" },

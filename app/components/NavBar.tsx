@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FiMenu, FiX, FiSend } from "react-icons/fi";
