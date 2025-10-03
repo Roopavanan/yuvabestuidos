@@ -118,12 +118,7 @@ export default function TimelineSection() {
     );
 
   return (
-    <section
-      className="relative flex flex-col items-center justify-center 
-             bg-gradient-to-r from-[#5829C7]/5% via-[#FFCA2D]/50% to-[#FFCA2D]/100%
-             bg-[length:200%_200%] bg-center
-             py-8 sm:py-12 px-4 w-full min-h-[708px] overflow-hidden"
-    >
+    <section className="relative flex flex-col items-center justify-center bg-[url('/home/timeline.svg')] bg-cover bg-center py-8 sm:py-12 px-4 w-full min-h-[708px] overflow-hidden">
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}

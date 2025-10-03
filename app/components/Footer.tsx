@@ -12,13 +12,14 @@ const Footer: React.FC = () => {
   const [isClient, setIsClient] = useState<boolean>(false);
 
   useEffect(() => {
-    setIsClient(true); // ensures hydration safety
+    setIsClient(true);
   }, []);
+  // ensures hydration safety
 
   if (!isClient) {
-    return null; // prevent SSR mismatch
+    return null;
   }
-
+  // prevent SSR mismatch
   return (
     <footer className="bg-[url('/foot.svg')] bg-cover bg-center text-white py-12 px-8 md:px-16 lg:px-24">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0">
